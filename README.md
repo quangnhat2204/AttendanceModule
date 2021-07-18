@@ -4,7 +4,7 @@ A small-scale flask server facial recognition implementation, using a pre-traine
 
 * The main inspiration is quangnhat2204's [repository](https://github.com/quangnhat2204/FaceRecog_TLCN) which uses David Sandberg's [facenet](https://github.com/davidsandberg/facenet) repository, the required dependencies from David Sandberg's 'facenet' repository were imported in the 'lib' folder and slightly cleaned.
 
-* The pre-trained facenet and MTCNN models are provided by David Sandberg's repository, the pre-trained facenet model I used can be downloaded (version 20170512-110547) [here](https://drive.google.com/file/d/0B5MzpY9kBtDVZ2RpVDYwWmxoSUk/edit) and the MTCNN model is located in the 'lib' directory in the 'mtcnn' folder. A full list of available facenet models in David Sandberg's repository can be seen [here](https://github.com/davidsandberg/facenet/wiki/Training-using-the-VGGFace2-dataset#difference-to-previous-models) and [here](https://github.com/davidsandberg/facenet#pre-trained-models). Though please note the different specifications in each pre-trained model.
+* The pre-trained facenet and MTCNN models are provided by David Sandberg's repository, the pre-trained facenet model I used can be downloaded (version 20180402-114759) [here](https://drive.google.com/file/d/1EXPBSXwTaqrSC0OhUdXNmKSh9qJUQ55-/view) and the MTCNN model is located in the 'lib' directory in the 'mtcnn' folder. A full list of available facenet models in David Sandberg's repository can be seen [here](https://github.com/davidsandberg/facenet/wiki/Training-using-the-VGGFace2-dataset#difference-to-previous-models) and [here](https://github.com/davidsandberg/facenet#pre-trained-models). Though please note the different specifications in each pre-trained model.
 
 **Note**: This is intended as only a **small-scale** facial recognition system, that uses comparison by Euclidean Distance according to an arbitrary Euclidean Distance threshold (**1.1** in this implementation) with one stored image embedding per person. The image files would be needed to be manually uploaded via the web interface or by a mobile app that uploads image files to the address of your server ('localhost:5000/upload' in this implementation) in order to create the embedding files that use the image file's name as the identity.
 
@@ -43,7 +43,7 @@ This implementation does not have "liveliness detection" functionality. If you p
 
 2. Move the model file to the 'model/' folder, the path of the model should be as follows:
 
-     ```'model/20170512-110547/20170512-110547.pb'```
+     ```'model/20180402-114759/20180402-114759.pb'```
 
 3. Run the server by using the ```python server.py``` command.
 
