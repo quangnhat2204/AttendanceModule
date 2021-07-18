@@ -1,0 +1,8 @@
+version: "3.7"
+
+services:
+  app1:
+    image: serverkltn/python:v1
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
